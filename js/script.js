@@ -13,17 +13,14 @@
 jQuery(function($){      
       
 
-    
- var clickAllowed = true;
- var clickAllowed2 = true;
-            hidden = true;     
+ 
     
 
     
 
    
       
-     if ($(window).width()<=1199 || clickAllowed == true) {
+     if ($(window).width()<=1199 ) {
      
 
 
@@ -47,36 +44,31 @@ jQuery(function($){
                       $("body").animate({ "left": "200px"}, 350, function() { $("body").addClass("fade"); });  
 
 
-                    }); clickAllowed = false;
+                    }); 
 
 
-    } else if ($(window).width()>1199 || clickAllowed == false) {
+    } else if ($(window).width()>1199) {
         
 
         
         $(".menu-trigger").unbind("click");
           
-        clickAllowed = true;
+
     }
 
     
    
     
-    if ($(window).width()>1199 || clickAllowed2 == true) {
+    if ($(window).width()>1199) {
  
    
+
         
-       
-        
-        
-        
- clickAllowed2 = false;
-        
-        } else if ($(window).width()<=1199 || clickAllowed2 == false) {
+        } else if ($(window).width()<=1199) {
             
              $(document).off("scroll", onScroll);
             
-            clickAllowed2 = true;
+
             
         }
 
