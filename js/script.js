@@ -122,6 +122,19 @@
   
 
      
+      if ($(window).width() <= 1199) {
+
+                $(".c-nav .c-main-menu").css({ "left": "-200px"});        
+
+          
+      } else if ($(window).width() > 1199) {
+          
+                $(".c-nav .c-main-menu").css({ "left": "0x"});
+                $("body").css({"left":"0px"});
+
+           
+          
+      }
 
     
 
