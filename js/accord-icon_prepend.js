@@ -1,0 +1,1 @@
+      $('.c-services-2 .accordion > h3').prepend('<span class="accord-icon"></span>');
