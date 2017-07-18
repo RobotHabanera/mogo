@@ -85,8 +85,7 @@ jQuery(function($){
 
      //smoothscroll
     $(".c-nav .c-main-menu .c-main-menu__link").on("click", function (e) {
-        
-        
+               
                     var currLink = $(this); 
                     if (currLink.hasClass("trala")) {
         
@@ -106,27 +105,21 @@ jQuery(function($){
                 { duration: 200, queue: false });
                                
                 $("html,body").animate({"left": "0px"},
-                {duration:200, quee: false});
+                {duration:200, queue: false});
       
         });
             
-            
+           
             
     } else if ($(window).width() > 1199) {
    
-
         
         $("html,body").unbind("animate");
-        
-      
+              
         
     }
-        
 
- 
-
-        
-            });
+    });
   
     
 onResize = function() {    
