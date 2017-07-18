@@ -1,3 +1,169 @@
-jQuery(function(a){var b=!0,c=!0;hidden=!0;if(1199>=a(window).width()||1==b)a(".menu-trigger").click(function(b){b.preventDefault();a(".c-main-menu").offset();a(".c-main-menu").width();a("body");a(".c-main-menu").animate({left:"0px"},350);a("body").animate({left:"200px"},350,function(){a("body").addClass("fade")})}),b=!1;else if(1199<a(window).width()||0==b)a(".menu-trigger").unbind("click"),b=!0;if(1199<a(window).width()||1==c)c=!1;else if(1199>=a(window).width()||0==c)a(document).off("scroll",onScroll),
-c=!0;a(".c-nav .c-main-menu .c-main-menu__link").on("click",function(b){a(this).hasClass("trala")||a("div.object1").remove();1199>=a(window).width()?(b.preventDefault(),a("html,body").animate({scrollTop:a(a.attr(this,"href")).offset().top-60},1E3,function(){a(".c-main-menu").animate({left:"-200px"},{duration:200,queue:!1});a("html,body").animate({left:"0px"},{duration:200,quee:!1})})):1199<a(window).width()&&a("html,body").unbind("animate")});onResize=function(){1199>=a(window).width()?a(".c-nav .c-main-menu").css({left:-200}):
-1199<a(window).width()&&(a(".c-nav .c-main-menu").css({left:0}),a("body").css({left:0}))};a(document).ready(onResize);a(window).on("resize",onResize)});
+
+     
+     
+
+
+
+
+
+
+/* Funkcja do zmiany menu desktopowego na mobilne menu i vice versa w zależności od szerokości okna przeglądarki */
+
+
+jQuery(function($){      
+      
+
+    
+ var clickAllowed = true;
+ var clickAllowed2 = true;
+            hidden = true;     
+    
+
+    
+
+   
+      
+     if ($(window).width()<=1199 || clickAllowed == true) {
+     
+
+
+
+ 
+
+                    $(".menu-trigger").click(function(event){
+                        
+                        
+ 
+
+                    event.preventDefault();
+                      var pos = $(".c-main-menu").offset().left;
+                        var w = $(".c-main-menu").width();
+                      var body = $("body");
+
+
+
+
+                      $(".c-main-menu").animate({"left": "0px"}, 350);
+                      $("body").animate({ "left": "200px"}, 350, function() { $("body").addClass("fade"); });  
+
+
+                    }); clickAllowed = false;
+
+
+    } else if ($(window).width()>1199 || clickAllowed == false) {
+        
+
+        
+        $(".menu-trigger").unbind("click");
+          
+        clickAllowed = true;
+    }
+
+    
+   
+    
+    if ($(window).width()>1199 || clickAllowed2 == true) {
+ 
+   
+        
+       
+        
+        
+        
+ clickAllowed2 = false;
+        
+        } else if ($(window).width()<=1199 || clickAllowed2 == false) {
+            
+             $(document).off("scroll", onScroll);
+            
+            clickAllowed2 = true;
+            
+        }
+
+
+
+
+     //smoothscroll
+    $(".c-nav .c-main-menu .c-main-menu__link").on("click", function (e) {
+        
+        
+                    var currLink = $(this); 
+                    if (currLink.hasClass("trala")) {
+        
+                            
+                    } else {
+                        $("div.object1").remove();
+                    }
+        
+        if ($(window).width()<=1199) {
+
+            e.preventDefault();
+            $("html,body").animate({
+                scrollTop: $($.attr(this, "href")).offset().top -60
+            }, 1000, function() { 
+                
+                $(".c-main-menu").animate({"left": "-200px"}, 
+                { duration: 200, queue: false });
+                               
+                $("html,body").animate({"left": "0px"},
+                {duration:200, quee: false});
+      
+        });
+            
+            
+            
+    } else if ($(window).width() > 1199) {
+   
+
+        
+        $("html,body").unbind("animate");
+        
+      
+        
+    }
+        
+
+ 
+
+        
+            });
+  
+    
+onResize = function() {    
+
+     
+      if ($(window).width() <= 1199) {
+
+                $(".c-nav .c-main-menu").css({ "left": "-200px"});        
+
+          
+      } else if ($(window).width() > 1199) {
+          
+                $(".c-nav .c-main-menu").css({ "left": "0x"});
+                $("body").css({"left":"0px"});
+
+           
+          
+      }
+ }  
+    
+    
+    
+    
+    $(document).ready(onResize);
+    
+ 
+    $(window).on("resize", onResize);
+});     
+
+
+
+
+
+
+
+
+
+
+
+
