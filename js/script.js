@@ -10,7 +10,7 @@
 /* Funkcja do zmiany menu desktopowego na mobilne menu i vice versa w zależności od szerokości okna przeglądarki */
 
 
-  
+jQuery(function($){      
       
 
  
@@ -120,6 +120,8 @@
         
             });
   
+    
+onResize = function() {    
 
      
       if ($(window).width() <= 1199) {
@@ -135,8 +137,18 @@
            
           
       }
-
+ }  
     
+    
+    
+    
+    $(document).ready(onResize);
+    
+ 
+    $(window).on("resize", onResize);
+});     
+
+
 
 
 
