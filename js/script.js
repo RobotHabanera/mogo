@@ -95,7 +95,7 @@
             }, 1000, function() { 
                 
                 $(".c-main-menu").animate({"left": "-200px"}, 
-                200, queue: false });
+                { duration: 200, queue: false });
                                
                 $("html,body").animate({"left": "0px"},
                 {duration:200, quee: false});
