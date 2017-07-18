@@ -41,7 +41,7 @@
 
 
                       $(".c-main-menu").animate({"left": "0px"}, 350);
-                      $("body").animate({ "left": "200px"}, 350);
+                      $("body").animate({ "left": "200px"}, 350, function() { $("body").addClass("fade"); });  
 
 
                     }); 
@@ -94,9 +94,11 @@
                 scrollTop: $($.attr(this, "href")).offset().top -60
             }, 1000, function() { 
                 
-                $(".c-main-menu").animate({"left": "-200px"}, 200);
+                $(".c-main-menu").animate({"left": "-200px"}, 
+                200, queue: false });
                                
-                $("html,body").animate({"left": "0px"}, 200);
+                $("html,body").animate({"left": "0px"},
+                {duration:200, quee: false});
       
         });
             
