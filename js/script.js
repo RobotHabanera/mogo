@@ -81,8 +81,8 @@ jQuery(function($){
                              var menuBarOpenedOnce = 0;
                             $('.c-nav .c-main-menu .c-main-menu__link').each(function () {
                                 var currLink = $(this);     
-                                if (currLink.length) {
                                 var refElement = $(currLink.attr("href"));
+                                if (refElement.length) {
                                 var mega = refElement.offset().top - 80;
                                 var megaplus = mega + 220;
                                 if (mega <= scrollPos && megaplus + refElement.height() > scrollPos) {
