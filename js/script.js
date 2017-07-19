@@ -543,7 +543,7 @@ jQuery(function($){
                 { duration: 200, queue: false });
                                
                 $('html,body').animate({left: 0},
-                {duration:200, quee: false});
+                {duration:200, queue: false});
       
         });
             
