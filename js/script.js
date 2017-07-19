@@ -10,7 +10,7 @@
 /* Funkcja do zmiany menu desktopowego na mobilne menu i vice versa w zależności od szerokości okna przeglądarki */
 
 
-jQuery(function($){      
+$(function(){      
       
 
     
@@ -38,7 +38,7 @@ jQuery(function($){
                     event.preventDefault();
                       var pos = $(".c-main-menu").offset().left;
                         var w = $(".c-main-menu").width();
-                      var body = $("body");
+
 
 
 
@@ -106,7 +106,7 @@ jQuery(function($){
                 { duration: 200, queue: false });
                                
                 $("html,body").animate({"left": "0px"},
-                {duration:200, quee: false});
+                {duration: 200, queue: false});
       
         });
             
