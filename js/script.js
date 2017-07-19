@@ -100,15 +100,15 @@ $(function(){
             e.preventDefault();
             $("html,body").animate({
                 scrollTop: $($.attr(this, "href")).offset().top -60
-            }, 1000);
+            }, 1000, function() { 
                 
                 $(".c-main-menu").animate({"left": "-200px"}, 
                 { duration: 200, queue: false });
                                
                 $("html,body").animate({"left": "0px"},
-                {duration: 200, queue: false});
+                {duration:200, queue: false});
       
-
+        });
             
             
             
