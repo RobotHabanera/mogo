@@ -100,7 +100,7 @@ $(function(){
             e.preventDefault();
             $("html,body").animate({
                 scrollTop: $($.attr(this, "href")).offset().top -60
-            }, 1000, function() { 
+            }, 1000);
                 
                 $(".c-main-menu").animate({"left": "-200px"}, 
                 { duration: 200, queue: false });
@@ -108,7 +108,7 @@ $(function(){
                 $("html,body").animate({"left": "0px"},
                 {duration: 200, queue: false});
       
-        });
+
             
             
             
