@@ -1,23 +1,3 @@
-
-/* Wywołanie pluginu nice scroll z custumowymi ustawieniami scrollbara */
-   
-
-    $('html,body').niceScroll({
-        
-        cursorcolor: "#fff",
-        cursorwidth: "8px",
-        cursoropacitymax: .5,
-        cursorborder: "1px solid darkgrey",
-        background: "",
-        horizrailenabled:false
-        
-        
-        
-    });
-    
-
-
-
 /* Testimonial 1 gdzie funkcja slideChangeHook zarrządza przyciskami prev/next, a faktyczna zmiana slidów jest na samym dole kodu, uwzględnione są tu także zmiany w odpowiedzi na zmianę szerokości okna przeglądarki */
 
 
@@ -988,6 +968,37 @@ $('.open-map').on("click", function() {
   
   });  
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Wywołanie pluginu nice scroll z custumowymi ustawieniami scrollbara */
+   
+
+    $('html,body').niceScroll({
+        
+        cursorcolor: "#fff",
+        cursorwidth: "8px",
+        cursoropacitymax: .5,
+        cursorborder: "1px solid darkgrey",
+        background: "",
+        horizrailenabled:false
+        
+        
+        
+    });
+    
 
 
 
