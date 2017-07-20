@@ -581,7 +581,7 @@ jQuery(function($){
                         scrollTop: $target.position().top - 80
                     }, 1200, 'swing', function (e) {
                         e.preventDefault();
-                        $(document).on("scroll", onScroll);
+                        onScroll();
                         window.location.hash = target;
 
                     }); 
