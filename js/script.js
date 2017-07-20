@@ -580,8 +580,8 @@ jQuery(function($){
                     $('html, body').stop().animate({
                         scrollTop: $target.position().top - 80
                     }, 1200, 'swing', function (e) {
-                        $(document).on("scroll", onScroll);
                         e.preventDefault();
+                        $(document).on("scroll", onScroll);
                         window.location.hash = target;
 
                     }); 
