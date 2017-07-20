@@ -561,11 +561,10 @@ jQuery(function($){
         
 
  
-         if ($(window).width()>1199) {
-                        $(document).off("scroll");               
+         if ($(window).width()>1199) {             
  
                     e.preventDefault();
-
+                        $(document).off("scroll");  
 
                     $('.c-nav .c-main-menu  a').each(function () {
                         $(this).removeClass('trala');
