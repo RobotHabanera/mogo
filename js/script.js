@@ -562,7 +562,7 @@ jQuery(function($){
 
  
          if ($(window).width()>1199) {
-             
+                        $(document).off("scroll");               
  
                     e.preventDefault();
 
@@ -582,7 +582,7 @@ jQuery(function($){
                     }, 1200, 'swing', function (e) {
                         e.preventDefault();
                         window.location.hash = target;
-                        $(document).off("scroll");                              
+                            
                         $(document).on("scroll", onScroll);
                     }); 
 
