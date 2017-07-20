@@ -561,10 +561,11 @@ jQuery(function($){
         
 
  
-         if ($(window).width()>1199) {             
+         if ($(window).width()>1199) {
+             
  
                     e.preventDefault();
-                        $(document).off("scroll");  
+                    $(document).off("scroll");
 
                     $('.c-nav .c-main-menu  a').each(function () {
                         $(this).removeClass('trala');
@@ -575,13 +576,12 @@ jQuery(function($){
                     $(this).prepend('<div class="object1"></div>');
                     var target = this.hash,
                         menu = target;
-                    $target = $(target);       
+                    $target = $(target);
                     $('html, body').stop().animate({
                         scrollTop: $target.position().top - 80
                     }, 1200, 'swing', function (e) {
                         e.preventDefault();
                         window.location.hash = target;
-                            
                         $(document).on("scroll", onScroll);
                     }); 
 
