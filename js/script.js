@@ -476,10 +476,10 @@ jQuery(function($){
         
         $(document).on("scroll", onScroll);
 
-                 function onScroll(event){
+                 function onScroll(){
                         $('div.object1').remove();
 
-                             event.preventDefault();
+                             
                             var scrollPos = $(document).scrollTop();
                              var menuBarOpenedOnce = 0;
                             $('.c-nav .c-main-menu .c-main-menu__link').each(function () {
@@ -579,8 +579,8 @@ jQuery(function($){
                     $target = $(target);
                     $('html, body').stop().animate({
                         scrollTop: $target.position().top - 80
-                    }, 1200, 'swing', function () {
-
+                    }, 1200, 'swing', function (e) {
+                        e.preventDefault();
                         window.location.hash = target;
                         $(document).on("scroll", onScroll);
                     }); 
