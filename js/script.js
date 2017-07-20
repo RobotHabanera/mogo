@@ -582,7 +582,7 @@ jQuery(function($){
                     }, 1200, 'swing', function (e) {
                         e.preventDefault();
                         location.hash = target;
-                        $(document).on("scroll", onScroll);
+
                     }); 
 
       
