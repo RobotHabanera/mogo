@@ -565,7 +565,7 @@ jQuery(function($){
              
  
                     e.preventDefault();
-                    $(document).off("scroll");
+
 
                     $('.c-nav .c-main-menu  a').each(function () {
                         $(this).removeClass('trala');
@@ -581,9 +581,8 @@ jQuery(function($){
                         scrollTop: $target.position().top - 80
                     }, 1200, 'swing', function (e) {
                         e.preventDefault();
-                        onScroll();
                         window.location.hash = target;
-
+                        $(document).on("scroll", onScroll);
                     }); 
 
       
