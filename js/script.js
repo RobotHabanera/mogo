@@ -526,7 +526,7 @@ jQuery(function($){
                     e.preventDefault();
         
                     var currLink = $(this); 
-        history.pushState({}, '', currLink.href);
+        history.pushState({}, '', this.href);
                     if (currLink.hasClass("trala")) {
         
                             
