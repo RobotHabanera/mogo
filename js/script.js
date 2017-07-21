@@ -580,12 +580,13 @@ jQuery(function($){
                         menu = target;
              
                     $target = $(target);        
-             history.pushState({}, '', this.href);
-                    location.hash = target;
+
+                    
                     $('html, body').animate({
                         scrollTop: $target.position().top - 80
                     }, 1200, 'swing', function () {
-
+                                     history.pushState({}, '', this.href);
+                        location.hash = target;
                         $(document).on("scroll", onScroll);
                     }); 
 
