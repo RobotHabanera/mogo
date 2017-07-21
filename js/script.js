@@ -579,8 +579,8 @@ jQuery(function($){
                     $target = $(target);
                     $('html, body').animate({
                         scrollTop: $target.position().top - 80
-                    }, 1200, 'swing', function (e) {
-                            e.preventDefault();
+                    }, 1200, 'swing', function () {
+                            
              history.pushState({}, '', this.href);
                         $(document).on("scroll", onScroll);
                     }); 
