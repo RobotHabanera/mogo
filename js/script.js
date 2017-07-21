@@ -584,7 +584,8 @@ jQuery(function($){
                     
                     $('html, body').animate({
                         scrollTop: $target.position().top - 80
-                    }, 1200, 'swing', function (e) {
+                    }, 1200, 'swing', function () {
+                        
                         location.hash = target;
                         $(document).on("scroll", onScroll);
                     }); 
