@@ -522,7 +522,7 @@ jQuery(function($){
 
      //smoothscroll
     $('.c-nav .c-main-menu .c-main-menu__link').on('click', function (e) {
-
+        
         
                     var currLink = $(this); 
                     if (currLink.hasClass("trala")) {
@@ -564,7 +564,8 @@ jQuery(function($){
          if ($(window).width()>1199) {
              
  
-
+                    e.preventDefault();
+             history.pushState({}, '', this.href);
                     $(document).off("scroll");
 
                     $('.c-nav .c-main-menu  a').each(function () {
@@ -577,10 +578,10 @@ jQuery(function($){
                     var target = this.hash,
                         menu = target;
                     $target = $(target);
-                    var targetOffset = $target.offset().top - 80;
                     $('html, body').animate({
                         scrollTop: $target.position().top - 80
-                    }, 1200, 'swing', function () {
+                    }, 1200, 'swing', function (e) {
+
                         $(document).on("scroll", onScroll);
                     }); 
 
@@ -594,10 +595,6 @@ jQuery(function($){
                         $(document).on("scroll");
   
                     }
-        
-                                        e.preventDefault();
-                        location.hash = target;          
-
         
             });
   
