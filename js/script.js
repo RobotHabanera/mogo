@@ -523,8 +523,7 @@ jQuery(function($){
      //smoothscroll
     $('.c-nav .c-main-menu .c-main-menu__link').on('click', function (e) {
         
-                            e.preventDefault();
-             history.pushState({}, '', this.href);
+
                     var currLink = $(this); 
                     if (currLink.hasClass("trala")) {
         
@@ -581,7 +580,8 @@ jQuery(function($){
                     $('html, body').animate({
                         scrollTop: $target.position().top - 80
                     }, 1200, 'swing', function (e) {
-
+                            e.preventDefault();
+             history.pushState({}, '', this.href);
                         $(document).on("scroll", onScroll);
                     }); 
 
