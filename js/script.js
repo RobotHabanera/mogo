@@ -581,10 +581,11 @@ jQuery(function($){
                     $('html, body').animate({
                         scrollTop: $target.position().top - 80
                     }, 1200, 'swing', function () {
-                        
-                        location.hash = target;
                         $(document).on("scroll", onScroll);
-                    }); 
+                    }, function(e) {
+                        e.preventDefault();
+                        location.hash = target;
+                    } 
 
       
          
