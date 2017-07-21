@@ -524,7 +524,6 @@ jQuery(function($){
     $('.c-nav .c-main-menu .c-main-menu__link').on('click', function (e) {
         
                     e.preventDefault();
-        history.pushState({}, '', this.href);
                     var currLink = $(this); 
 
 
@@ -585,7 +584,7 @@ jQuery(function($){
                     $('html, body').animate({
                         scrollTop: $target.position().top - 80
                     }, 1200, 'swing', function (e) {
-                        e.
+                        e.preventDefault();
                                      history.pushState({}, '', this.href);
                         location.hash = target;
                         $(document).on("scroll", onScroll);
