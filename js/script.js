@@ -576,21 +576,18 @@ jQuery(function($){
 
 
                     $(this).prepend('<div class="object1"></div>');
-             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
                     var target = this.hash,
                         menu = target;
              
                     $target = $(target);        
-target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                    if (target.length) {
+
+                    
                     $('html, body').animate({
                         scrollTop: $target.position().top - 80
                     }, 1200, 'swing', function (e) {
-                        
+                        location.hash = target;
                         $(document).on("scroll", onScroll);
                     }); 
-                    }
-             }
 
       
          
