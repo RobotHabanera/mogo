@@ -526,7 +526,7 @@ jQuery(function($){
                     e.preventDefault();
         
                     var currLink = $(this); 
-        history.pushState({}, '', this.href);
+
 
                     if (currLink.hasClass("trala")) {
         
@@ -579,8 +579,9 @@ jQuery(function($){
                     var target = this.hash,
                         menu = target;
              
-                    $target = $(target);
-                                                          location.hash = target;
+                    $target = $(target);        
+             history.pushState({}, '', this.href);
+                    location.hash = target;
                     $('html, body').animate({
                         scrollTop: $target.position().top - 80
                     }, 1200, 'swing', function () {
