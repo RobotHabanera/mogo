@@ -522,7 +522,7 @@ jQuery(function($){
 
      //smoothscroll
     $('.c-nav .c-main-menu .c-main-menu__link').on('click', function (e) {
-        
+                            e.preventDefault();
         
                     var currLink = $(this); 
                     if (currLink.hasClass("trala")) {
@@ -564,7 +564,7 @@ jQuery(function($){
          if ($(window).width()>1199) {
              
  
-                    e.preventDefault();
+
                     location.hash = target;
                     $(document).off("scroll");
 
