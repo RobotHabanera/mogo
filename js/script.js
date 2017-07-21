@@ -577,9 +577,12 @@ jQuery(function($){
                     var target = this.hash,
                         menu = target;
                     $target = $(target);
+                    var targetOffset = $target.offset().top - 80;
                     $('html, body').animate({
-                        scrollTop: $target.position().top - 78
+                        scrollTop: $target.position().top - 80
                     }, 1200, 'swing', function () {
+                        
+                        location.hash = targetOffset;
                         $(document).on("scroll", onScroll);
                     }); 
 
@@ -595,7 +598,7 @@ jQuery(function($){
                     }
         
                             
-                    location.hash = target;
+
         
             });
   
