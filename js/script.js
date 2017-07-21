@@ -583,6 +583,10 @@ jQuery(function($){
                         e.preventDefault();
                         location.hash = target;
 
+                    }, function() {
+                        
+                        $(document).on("scroll", onScroll);
+                        
                     }); 
 
       
