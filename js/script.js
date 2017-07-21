@@ -577,10 +577,10 @@ jQuery(function($){
 
                     $(this).prepend('<div class="object1"></div>');
                     var target = this.hash,
-                                             location.hash = target;
                         menu = target;
              
                     $target = $(target);
+                                                          location.hash = target;
                     $('html, body').animate({
                         scrollTop: $target.position().top - 80
                     }, 1200, 'swing', function () {
