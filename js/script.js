@@ -565,6 +565,7 @@ jQuery(function($){
              
  
                     e.preventDefault();
+                    location.hash = target;
                     $(document).off("scroll");
 
                     $('.c-nav .c-main-menu  a').each(function () {
@@ -578,14 +579,10 @@ jQuery(function($){
                         menu = target;
                     $target = $(target);
                     $('html, body').animate({
-                        scrollTop: $target.position().top - 79
+                        scrollTop: $target.position().top - 80
                     }, 1200, 'swing', function () {
                         $(document).on("scroll", onScroll);
-                    });
-                                     
-             
-                        location.hash = target;
-             
+                    }); 
 
       
          
