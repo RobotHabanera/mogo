@@ -581,8 +581,7 @@ jQuery(function($){
                     $('html, body').stop().animate({
                         scrollTop: $target.position().top - 80
                     }, 1200, 'swing', function (e) {
-                        e.preventDefault();
-                        location.hash = href;
+
                         $(document).on("scroll", onScroll);
                     }); 
 
