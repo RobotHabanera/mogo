@@ -576,8 +576,7 @@ jQuery(function($){
                         
                     }); 
 
-      $(document).on("scroll", onScroll);
-         
+
              
              
              
