@@ -395,14 +395,6 @@ $(window).resize(function() {
 
 
 
-
-
-
-
-
-
-
-
      
      
 
@@ -543,7 +535,7 @@ jQuery(function($){
                 { duration: 200, queue: false });
                                
                 $('html,body').animate({left: 0},
-                {duration:200, queue: false});
+                {duration:200, quee: false});
       
         });
             
@@ -572,18 +564,15 @@ jQuery(function($){
                     })
                     $(this).addClass('trala');
 
-                    var menuheight = $('.c-nav').height();
+
                     $(this).prepend('<div class="object1"></div>');
-             var href = $( this ).attr( 'href' );       
-             var target = this.hash,
+                    var target = this.hash,
                         menu = target;
                     $target = $(target);
-             var menutarget = $target.position().top - 40;
-                    menuhash = target - menuheight;
                     $('html, body').stop().animate({
-                        scrollTop: menutarget
+                        scrollTop: $target.position().top - 80
                     }, 1200, 'swing', function () {
-                        location.hash = target - menuheight;
+                        location.hash = target;
                         $(document).on("scroll", onScroll);
                     }); 
 
