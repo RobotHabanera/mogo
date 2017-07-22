@@ -525,6 +525,10 @@ jQuery(function($){
      //smoothscroll
     $('.c-nav .c-main-menu .c-main-menu__link').on('click', function (e) {
         
+
+                       window.setTimeout(function() {
+                            offsetAnchor();
+                          }, 0);        
         
                     var currLink = $(this); 
                     if (currLink.hasClass("trala")) {
@@ -565,9 +569,7 @@ jQuery(function($){
  
          if ($(window).width()>1199) {
              
-                       window.setTimeout(function() {
-    offsetAnchor();
-  }, 0);
+
                     e.preventDefault();
                     $(document).off("scroll");
 
