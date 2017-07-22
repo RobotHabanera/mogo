@@ -579,7 +579,7 @@ jQuery(function($){
                         menu = target;
                     $target = $(target);
                     $('html, body').stop().animate({
-                        scrollTop: $target.position().top - 80
+                        scrollTop: $target.position().top - 70
                     }, 1200, 'swing', function (e) {
 
                         $(document).on("scroll", onScroll);
