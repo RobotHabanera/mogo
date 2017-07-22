@@ -460,7 +460,11 @@ jQuery(function($){
     
     if ($(window).width()>1199 || clickAllowed2 == true) {
  
-   
+           function offsetAnchor() {
+              if (location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 80);
+              }
+            }
         
        
         
@@ -502,11 +506,7 @@ jQuery(function($){
                  } 
         
         
-        function offsetAnchor() {
-              if (location.hash.length !== 0) {
-                window.scrollTo(window.scrollX, window.scrollY - 80);
-              }
-            }
+
         
         
         clickAllowed2 = false;
