@@ -523,7 +523,7 @@ jQuery(function($){
      //smoothscroll
     $('.c-nav .c-main-menu .c-main-menu__link').on('click', function (e) {
         
-                    e.preventDefault();
+                    
         
                     var currLink = $(this); 
 
