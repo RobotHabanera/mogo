@@ -557,7 +557,7 @@ jQuery(function($){
              
  
                     e.preventDefault();
-
+                    $(document).off("scroll");
 
                     $('.c-nav .c-main-menu  a').each(function () {
                         $(this).removeClass('trala');
@@ -570,13 +570,14 @@ jQuery(function($){
                         menu = target;
                     $target = $(target);
                     $('html, body').stop().animate({
-                        scrollTop: $target.position().top - 60
+                        scrollTop: $target.position().top - 80
                     }, 1200, 'easeOutQuad', function () {
-                         
-                        
+                        location.hash = target;
+                        $(document).on("scroll", onScroll);
                     }); 
 
-
+      
+         
              
              
              
