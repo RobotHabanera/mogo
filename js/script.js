@@ -555,10 +555,10 @@ jQuery(function($){
  
          if ($(window).width()>1199) {
              
- 
+$(document).off("scroll"); 
                     e.preventDefault();
 window.location.hash = target;
-$(document).off("scroll");
+
                     $('.c-nav .c-main-menu  a').each(function () {
                         $(this).removeClass('trala');
                     })
