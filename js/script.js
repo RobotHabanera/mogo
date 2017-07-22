@@ -576,13 +576,13 @@ jQuery(function($){
                     $(this).prepend('<div class="object1"></div>');
      
              var $target = $(this.hash), target = this.hash;
-             var targetOffset = $target.offset().top - 92;
+             var targetOffset = $target.offset().top - 70;
                         menu = target;
                     $target = $(target);
                     $('html, body').stop().animate({
                         scrollTop: targetOffset
                     }, 1200, 'swing', function () {
-                        location.hash = href;
+                        location.hash = targetOffset;
                         $(document).on("scroll", onScroll);
                     }); 
 
