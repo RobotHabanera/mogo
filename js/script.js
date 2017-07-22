@@ -574,7 +574,7 @@ window.location.hash = target;
                         scrollTop: $target.position().top - 60
                     }, 1200, 'easeOutQuad', function () {
                          
-                        $(document).on("scroll", onScroll);
+
                     }); 
 
 
