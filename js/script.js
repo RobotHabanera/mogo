@@ -406,13 +406,6 @@ $(window).resize(function() {
 /* Funkcja do zmiany menu desktopowego na mobilne menu i vice versa w zależności od szerokości okna przeglądarki */
 
 
-           function offsetAnchor() {
-              if (location.hash.length !== 0) {
-                window.scrollTo(window.scrollX, window.scrollY - 80);
-              }
-            }
-
-
 jQuery(function($){      
       
 
@@ -467,7 +460,7 @@ jQuery(function($){
     
     if ($(window).width()>1199 || clickAllowed2 == true) {
  
-
+   
         
        
         
@@ -506,13 +499,7 @@ jQuery(function($){
                             });
 
 
-                 } 
-        
-        
-
-        
-        
-        clickAllowed2 = false;
+                 } clickAllowed2 = false;
         
         } else if ($(window).width()<=1199 || clickAllowed2 == false) {
             
@@ -527,8 +514,6 @@ jQuery(function($){
 
      //smoothscroll
     $('.c-nav .c-main-menu .c-main-menu__link').on('click', function (e) {
-
-
         
         
                     var currLink = $(this); 
@@ -570,9 +555,8 @@ jQuery(function($){
  
          if ($(window).width()>1199) {
              
-
+ 
                     e.preventDefault();
-             location.hash = target;
                     $(document).off("scroll");
 
                     $('.c-nav .c-main-menu  a').each(function () {
@@ -587,12 +571,8 @@ jQuery(function($){
                     $target = $(target);
                     $('html, body').stop().animate({
                         scrollTop: $target.position().top - 80
-                    }, 1200, 'swing', window.setTimeout(function() () {
-                        
-                        
-                                
-                            offsetAnchor();
-                          }, 0); 
+                    }, 1200, 'swing', function () {
+                        location.hash = target;
                         $(document).on("scroll", onScroll);
                     }); 
 
