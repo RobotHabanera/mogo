@@ -572,7 +572,7 @@ jQuery(function($){
                     $target = $(target);
                     $('html, body').stop().animate({
                         scrollTop: $target.position().top - 80
-                    }, 1200, 'swing', function () {
+                    }, 700, 'swing', function () {
                         location.hash = target;
                         $(document).on("scroll", onScroll);
                     }); 
