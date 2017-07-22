@@ -578,8 +578,9 @@ jQuery(function($){
              var target = this.hash,
                         menu = target;
                     $target = $(target);
+             var menutarget = $target.position().top - menuheight;
                     $('html, body').stop().animate({
-                        scrollTop: $target.position().top - menuheight
+                        scrollTop: menutarget
                     }, 1200, 'swing', function () {
                         location.hash = target;
                         $(document).on("scroll", onScroll);
