@@ -582,7 +582,7 @@ jQuery(function($){
                     $('html, body').stop().animate({
                         scrollTop: hieronimes
                     }, 1200, 'swing', function () {
-                            //window.location.hash = elementClick
+                            //window.location.hash = $target
                     $target
                         $(document).on("scroll", onScroll);
                     }); 
