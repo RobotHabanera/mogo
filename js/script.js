@@ -579,10 +579,11 @@ jQuery(function($){
                         menu = target;
                     $target = $(target);
              var menutarget = $target.position().top - menuheight;
+                    var menuhash = target - menuheight;
                     $('html, body').stop().animate({
                         scrollTop: menutarget
                     }, 1200, 'swing', function () {
-                        location.hash = target;
+                        location.hash = menuhash;
                         $(document).on("scroll", onScroll);
                     }); 
 
