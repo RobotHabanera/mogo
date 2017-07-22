@@ -1,0 +1,166 @@
+.o-p{
+
+        font-family:$Roboto-Regular;
+        font-size: 15px;
+        word-spacing: 2px;
+        line-height:20px;
+        color:#999999;
+
+    
+
+    
+    @include susy-breakpoint(max-width 480px) {
+        
+        &--intro {
+            margin-bottom:20px;
+            padding-left: 15px; 
+            padding-right: 15px; 
+        }       
+        &--testimonial {
+            position:absolute;
+            left:0;
+            right:0;
+            top:0;
+            width: span(12 of 12);
+            margin:auto;
+            word-spacing: -2px;
+            line-height: 40px;
+            font-family:$Roboto-LightItalic;
+            font-weight:100;
+            font-size:15px;
+            text-align:center;
+        }
+        &--testimonial2 {
+            position:absolute;
+            left:200px;
+            top:0;
+            width: span(11.5 of 12);
+            margin-right: 0;
+            word-spacing: -2px;
+            line-height: 40px;
+            font-family:$Roboto-LightItalic;
+            font-weight:100;
+            font-size:25px;
+            text-align:left;
+        }        
+        
+    }
+    
+    @include susy-breakpoint(481px 768px) {
+        
+        &--intro {
+            margin-bottom:20px;
+            padding-left: 15px; 
+            padding-right: 15px; 
+        }       
+        &--testimonial {
+            position:absolute;
+            left:0;
+            right:0;
+            top:0;
+            width: span(12 of 12);
+            margin:auto;
+            word-spacing: -2px;
+            line-height: 40px;
+            font-family:$Roboto-LightItalic;
+            font-weight:100;
+            font-size:15px;
+            text-align:center;
+        }
+        &--testimonial2 {
+            position:absolute;
+            left:200px;
+            top:0;
+            width: span(11.5 of 12);
+            margin-right: 0;
+            word-spacing: -2px;
+            line-height: 40px;
+            font-family:$Roboto-LightItalic;
+            font-weight:100;
+            font-size:25px;
+            text-align:left;
+        }        
+        
+    }
+    
+     @include susy-breakpoint(769px 1199px) {
+        
+        &--intro {
+            margin:20px auto 105px;
+            padding-left: 15px; 
+            padding-right: 15px;
+            max-width:1200px;
+            text-align: center;
+        }        
+        &--testimonial {
+            position:absolute;
+            left:200px;
+            top:0;
+            width: span(10 of 12);
+            margin-right: 0;
+            word-spacing: -2px;
+            line-height: 40px;
+            font-family:$Roboto-LightItalic;
+            font-weight:100;
+            font-size:18px;
+            text-align:left;
+        }
+        &--testimonial2 {
+            position:absolute;
+            left:200px;
+            top:0;
+            width: span(10 of 12);
+            margin-right: 0;
+            word-spacing: -2px;
+            line-height: 40px;
+            font-family:$Roboto-LightItalic;
+            font-weight:100;
+            font-size:18px;
+            text-align:left;
+        }       
+        
+    }
+    
+    @include susy-breakpoint(1200px) {    
+
+        &--team {
+            margin:20px auto 105px;
+            padding-left: 15px; 
+            padding-right: 15px;
+            max-width:1200px;
+            text-align: center;
+        }         
+        
+        &--intro {
+            margin:20px auto 105px;
+            max-width:1200px;
+            text-align: left;
+        }        
+        &--testimonial {
+            position:absolute;
+            left:200px;
+            top:0;
+            width: span(11.5 of 12);
+            margin-right: 0;
+            word-spacing: -2px;
+            line-height: 40px;
+            font-family:$Roboto-LightItalic;
+            font-weight:100;
+            font-size:25px;
+            text-align:left;
+        }
+        &--testimonial2 {
+            position:absolute;
+            left:200px;
+            top:0;
+            width: span(11.5 of 12);
+            margin-right: 0;
+            word-spacing: -2px;
+            line-height: 40px;
+            font-family:$Roboto-LightItalic;
+            font-weight:100;
+            font-size:25px;
+            text-align:left;
+        }
+    }
+}

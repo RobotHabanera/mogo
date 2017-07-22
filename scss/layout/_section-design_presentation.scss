@@ -1,0 +1,100 @@
+@include susy-breakpoint(max-width 480px) {
+
+    .c-design {
+
+
+        
+        &:before {
+
+
+    }
+
+    }
+
+    .c-design h2 {
+
+
+
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+@include susy-breakpoint(481px 768px) {
+
+    .c-design {
+
+
+        
+        &:before {
+
+
+    }
+
+    }
+
+    .c-design h2 {
+
+
+
+    }
+
+    
+}
+
+
+
+
+
+@include susy-breakpoint(1200px) {
+    
+    
+    .c-design {
+
+
+
+        &:before {            
+          
+        }
+        
+        
+        &__image-1 {
+            
+
+            
+            
+        }
+        
+        &__image-2 {
+            
+
+            
+            
+        }
+        
+        
+    }
+
+    .c-design h2 {
+
+
+
+    }
+
+
+
+  
+    
+    
+    
+    
+}

@@ -1,0 +1,233 @@
+@include susy-breakpoint(max-width 480px) {
+
+    .c-what-people-say {
+
+      
+
+
+    h2 {
+
+        }
+    }
+
+
+
+    .c-testimonial-three {
+    
+        &__author-photo {
+
+
+        }
+
+        &__author-name {
+            padding: 10px 0;
+            font-family: $Montserrat-Regular;
+            font-size:12px;
+            text-transform: uppercase;
+
+            }
+
+        &__author-job-title {
+                font-family: $Roboto-LightItalic;
+            }
+
+        &__text {
+            padding-top:40px;
+            font-family: $Roboto-Regular;
+            font-size: 15px;
+            letter-spacing: 0px;
+            word-spacing: 0;
+            line-height: 25px;
+            color: #999999;
+
+        }
+
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+@include susy-breakpoint(481px 768px) {
+
+    .c-what-people-say {
+
+      
+
+
+    h2 {
+
+        }
+    }
+
+
+
+    .c-testimonial-three {
+    
+        &__author-photo {
+
+
+        }
+
+        &__author-name {
+            padding: 10px 0;
+            font-family: $Montserrat-Regular;
+            font-size:12px;
+            text-transform: uppercase;
+
+            }
+
+        &__author-job-title {
+                font-family: $Roboto-LightItalic;
+            }
+
+        &__text {
+            padding-top:40px;
+            font-family: $Roboto-Regular;
+            font-size: 15px;
+            letter-spacing: 0px;
+            word-spacing: 0;
+            line-height: 25px;
+            color: #999999;
+
+        }
+
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+@include susy-breakpoint(769px 1199px) {
+
+    .c-what-people-say {
+
+      
+
+
+    h2 {
+
+        }
+    }
+
+
+
+    .c-testimonial-three {
+    
+        &__author-photo {
+
+
+        }
+
+        &__author-name {
+            padding: 10px 0;
+            font-family: $Montserrat-Regular;
+            font-size:12px;
+            text-transform: uppercase;
+
+            }
+
+        &__author-job-title {
+                font-family: $Roboto-LightItalic;
+            }
+
+        &__text {
+            padding-top:40px;
+            font-family: $Roboto-Regular;
+            font-size: 15px;
+            letter-spacing: 0px;
+            word-spacing: 0;
+            line-height: 25px;
+            color: #999999;
+
+        }
+
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+@include susy-breakpoint(1200px) {
+    
+    
+    .c-what-people-say {
+
+
+
+
+        &:before {
+            
+        }
+        
+    h2 {
+
+        }
+    }    
+    
+
+    
+    .c-testimonial-three {
+        
+
+        
+        &:nth-of-type(2n) {
+
+        }
+    
+        &__author-photo {
+
+        }
+        
+        &__info-box {
+            
+        }
+
+        &__author-name {
+            padding: 10px 0;
+            font-family: $Montserrat-Regular;
+            font-size:12px;
+            text-transform: uppercase;
+
+            }
+
+        &__author-job-title {
+                font-family: $Roboto-LightItalic;
+            }
+
+        &__text {
+            padding-top:40px;
+            font-family: $Roboto-Regular;
+            font-size: 15px;
+            letter-spacing: 0px;
+            word-spacing: 0;
+            line-height: 25px;
+            color: #999999;
+
+        }
+
+
+    }    
+    
+}

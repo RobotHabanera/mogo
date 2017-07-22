@@ -1,0 +1,142 @@
+@include susy-breakpoint(max-width 480px) {
+
+    .c-what-we-do {
+        @include container();
+        
+        position:relative;
+        text-align: center;
+        padding:80px 0 90px;        
+        h2 {
+         padding: 15px 0 20px;
+        }
+    }
+
+
+
+     .c-services-2 {
+         
+         &__image {
+             display: none;
+         }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@include susy-breakpoint(481px 768px) {
+
+    .c-what-we-do {
+        @include container();
+        
+        position:relative;
+        text-align: center;
+        padding:80px 0 90px;        
+        h2 {
+         padding: 15px 0 20px;
+        }
+    }
+
+     .c-services-2 {
+
+         &__images {
+             margin:0 auto 20px;
+         }         
+         &__image {
+             display: block;
+             width:100%;
+             height:auto;
+         }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+@include susy-breakpoint(769px 1199px) {
+
+    .c-what-we-do {
+        @include container();
+        
+        position:relative;
+        text-align: center;
+        padding:80px 0 90px;        
+        h2 {
+         padding: 15px 0 20px;
+        }
+    }
+
+
+
+     .c-services-2 {
+
+         &__images {
+             margin:0 auto 20px;
+         }         
+         &__image {
+             display: block;
+             width:100%;
+             height:auto;
+         }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+@include susy-breakpoint(1200px) {
+
+    .c-what-we-do {
+        @include container($desktop);
+        position:relative;
+        text-align: center;
+        padding:110px 0 120px;
+         h2 {
+         padding: 15px 0 20px;
+        }
+    }    
+        
+     .c-services-2 {
+         
+        
+        @include cf;
+         
+         
+        &__images {
+            float:left;
+        }
+          &__image {
+             display: block;
+         }       
+        .accordion {
+            
+            float:right;
+            width: span(6 of 12);
+            max-height:400px;
+            text-align: justify;
+        }
+        
+    } 
+    
+    
+}

@@ -1,0 +1,183 @@
+.o-hr {
+    
+    @include susy-breakpoint(max-width 480px) {
+            width: span(1 of 4);
+            margin-bottom: 25px;        
+            border:none;
+            height:3px;
+            background-color: #f38181;  
+
+    }
+    @include susy-breakpoint(481px 768px) {
+            width: span(1 of 4);
+            margin-bottom: 25px;        
+            border:none;
+            height:3px;
+            background-color: #f38181;  
+
+    }
+    @include susy-breakpoint(769px 1199px) {
+            margin-bottom:45px;
+            width: span(.8 of 12);
+            border:none;
+            height:3px;
+            background-color: #f38181; 
+
+    }      
+    @include susy-breakpoint(1200px) {
+            margin-bottom:45px;
+            width: span(.8 of 12);
+            border:none;
+            height:3px;
+            background-color: #f38181;  
+
+    }
+    
+    
+    
+    
+    
+    &--footer-one {
+            width: span(12 of 12);
+            margin-top:10px;
+            margin-bottom:20px;
+            border:none;
+            height:1px;
+            background-color: #e5e5e5;        
+    }
+    
+    &--footer-two {
+        
+    @include susy-breakpoint(max-width 480px) {      
+            width: span(12 of 12);
+            margin-top:40px;
+            margin-bottom:20px;
+            border:none;
+            height:1px;
+            background-color: #e5e5e5;           
+            }
+    @include susy-breakpoint(769px 1199px) {
+            width: span(12 of 12);
+            margin-top:20px;
+            margin-bottom:20px;
+            border:none;
+            height:1px;
+            background-color: #e5e5e5;           
+            }            
+    @include susy-breakpoint(1200px) {
+            width: span(12 of 12);
+            margin-top:20px;
+            margin-bottom:20px;
+            border:none;
+            height:1px;
+            background-color: #e5e5e5;           
+            }        
+        
+    }
+    
+    &--header {
+        @include susy-breakpoint(max-width 480px) {      
+                position:absolute;
+                left:0;
+                right:0;
+                bottom:40%;
+                margin:auto;
+                width: span(1 of 12);
+                border:none;
+                height:3px;
+                background-color: white;
+            }
+        @include susy-breakpoint(481px 768px) {        
+                position:absolute;
+                left:0;
+                right:0;
+                bottom:40%;
+                margin:auto;
+                width: span(1 of 12);
+                border:none;
+                height:3px;
+                background-color: white;
+            }
+        @include susy-breakpoint(769px 1199px) {       
+                position:absolute;
+                left:0;
+                right:0;
+                bottom:30%;
+                margin:auto;
+                width: span(1 of 12);
+                border:none;
+                height:3px;
+                background-color: white;
+            }         
+        @include susy-breakpoint(1200px) {       
+                position:absolute;
+                left:0;
+                right:0;
+                bottom:30%;
+                margin:auto;
+                width: span(1 of 12);
+                border:none;
+                height:3px;
+                background-color: white;
+            }        
+    }
+    &--testimonial {
+        width: span(.95 of 12);        
+        margin-bottom:0;
+        position:absolute;
+        left:200px;
+        bottom:5px;
+    }
+    &--testimonial2 {
+        width: span(.95 of 12);        
+        margin-bottom:0;
+        position:absolute;
+        left:200px;
+        bottom:5px;
+    }    
+    &--people-say {
+        @include susy-breakpoint(max-width 480px) {     
+        display: none;
+        }
+        @include susy-breakpoint(481px 768px) { 
+        display: none;           
+        }
+        @include susy-breakpoint(769px 1199px) { 
+        width: span(2 of 12);
+        position:absolute;
+        left:0;
+        right:0;
+        margin:auto;
+        top:70px;        
+            
+        }        
+        @include susy-breakpoint(1200px) { 
+        width: span(2 of 12);
+        position:absolute;
+        left:0;
+        top:60px;        
+            
+        } 
+    }
+    &--what-people-say-heading {
+            margin-bottom:90px;        
+    }
+    &--latest-blog {
+        margin-bottom:0;
+        width: 100%;
+        border:none;
+        height:1px;
+        background-color: #e5e5e5;          
+    }
+    &--map {
+        position: relative;
+        z-index:2;
+        width: span(.6 of 12);        
+        margin-bottom:0;
+        left:0;
+        right:0;
+        margin:auto;
+        bottom:20px;        
+    }
+    
+}

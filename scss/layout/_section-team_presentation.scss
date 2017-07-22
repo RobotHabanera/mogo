@@ -1,0 +1,197 @@
+@include susy-breakpoint(max-width 480px) {
+
+    .c-team {
+
+    }
+
+    .c-team > h2 {
+
+
+
+    }
+
+    .c-team hr {
+
+
+
+    }
+
+    .c-team-members {
+
+
+
+    }
+
+    .c-team-members__item {
+
+
+
+
+    }
+
+    .c-team-members__image {
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+@include susy-breakpoint(481px 768px) {
+
+    .c-team {
+
+    }
+
+    .c-team > h2 {
+
+
+
+    }
+
+    .c-team hr {
+
+
+
+    }
+
+    .c-team-members {
+
+
+
+    }
+
+    .c-team-members__item {
+
+
+
+
+    }
+
+    .c-team-members__image {
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+@include susy-breakpoint(769px 1199px) {
+
+    .c-team {
+
+    }
+
+    .c-team > h2 {
+
+
+
+    }
+
+    .c-team hr {
+
+
+
+    }
+
+    .c-team-members {
+
+
+
+    }
+
+    .c-team-members__item {
+
+
+
+
+    }
+
+    .c-team-members__image {
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+@include susy-breakpoint(1200px) {
+    
+
+    
+    .c-team {
+
+    }
+    h2 {
+
+
+    }
+    .c-team hr {
+
+    }
+    .c-team-members {
+
+    }
+
+    .c-team-members__item {
+        
+
+        &:nth-of-type(3) {
+
+        }
+    }
+
+    .c-team-members__image {
+        
+    }    
+    
+    .c-social-media-list {
+        
+
+        
+        &__item {
+
+            &:nth-of-type(4) {
+
+            }
+        }
+        
+    } 
+
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

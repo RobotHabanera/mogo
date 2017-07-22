@@ -1,0 +1,181 @@
+$coral: #FF7346;
+
+
+$Montserrat-SemiBold: "Montserrat-SemiBold";  
+$Montserrat-Bold: "Montserrat-Bold";
+$Montserrat-Regular: "Montserrat-Regular";
+$Montserrat-Light: "Montserrat-Light";
+$KaushanScript-Regular: "KaushanScript-Regular";
+$Roboto-Regular: "Roboto-Regular";
+$Roboto-LightItalic: "Roboto-LightItalic";
+
+
+h1 { font-size: 30px; }
+
+h2 {font-size: 18px;
+    font-family:$Montserrat-Bold;
+    font-size:30px;
+    text-transform: uppercase;
+    padding: 25px 0 30px;
+    color:#333333;
+}
+
+h3 { font-size: 18px; }
+
+h4 { font-size: 16px; }
+
+h5 { font-size: 14px; }
+
+h6 { font-size: 12px; }
+
+
+
+        @keyframes team {
+                  from {
+                      left:0; 
+                      bottom:0;}
+                  to {
+                      left:-10px; 
+                      bottom:10px;}
+                } 
+        @-moz-keyframes team {
+                  from {
+                      left:0; 
+                      bottom:0;}
+                  to {
+                      left:-10px; 
+                      bottom:10px;}
+                } 
+
+        @keyframes mega {
+
+            0%  { opacity:0; bottom:-53px;}
+            5%  {opacity:.05; bottom:-33px;}
+            10% {opacity:0.1; bottom:-13px;}
+            15% {opacity:0.2; bottom:0;}
+            20% {opacity:0.3; bottom:20px;}
+            25% {opacity:0.4; bottom:30px;}
+            30% {opacity:0.5; bottom:40px;}            
+            35% {opacity:0.6; bottom:50px;}
+            40% {opacity:0.7; bottom:60px;}
+            45% {opacity:0.8; bottom:70px;}
+            70% {opacity:0.8; bottom:80px;}
+            90% {opacity:0.9; bottom:80px;}
+            100% {opacity:1; bottom:80px;}            
+        }
+        @-moz-keyframes mega {
+
+            0%  { opacity:0; bottom:-53px;}
+            5%  {opacity:.05; bottom:-33px;}
+            10% {opacity:0.1; bottom:-13px;}
+            15% {opacity:0.2; bottom:0;}
+            20% {opacity:0.3; bottom:20px;}
+            25% {opacity:0.4; bottom:30px;}
+            30% {opacity:0.5; bottom:40px;}            
+            35% {opacity:0.6; bottom:50px;}
+            40% {opacity:0.7; bottom:60px;}
+            45% {opacity:0.8; bottom:70px;}
+            70% {opacity:0.8; bottom:80px;}
+            90% {opacity:0.9; bottom:80px;}
+            100% {opacity:1; bottom:80px;}            
+        }
+             @keyframes wolf {
+              from {bottom:0; left:0; }
+              to {bottom:10px; left:-10px; }
+            }          
+             @-moz-keyframes wolf {
+              from {bottom:0; left:0; }
+              to {bottom:10px; left:-10px; }
+            }  
+
+.s1 {
+    font-size: 14px;
+}
+
+
+.s2 {
+    font-size:18px;
+    
+    &--intro-text {
+        display:inline-block;
+        font-family:$KaushanScript-Regular;
+        font-size:24px;
+        color:#333333;
+        
+    }
+}
+
+
+.s3 {
+    font-family:$Montserrat-Light;
+    font-size:14px;
+    font-weight:600;
+    text-transform: uppercase;
+    color:#333333;
+}
+
+
+.t2 {
+    
+    font-size:35px;
+    
+    &--intro-text {       
+        font-family:$KaushanScript-Regular;
+        font-size:72px;
+        color:white;        
+    }
+    
+    
+    @include susy-breakpoint(max-width 480px) {
+
+        font-size:20px;
+
+        &--intro-text {
+            
+            font-size:30px;
+        }
+    }        
+    @include susy-breakpoint(481px 768px) {
+
+        font-size:40px;
+
+        &--intro-text {
+            
+            font-size:60px;
+        }
+    }
+    @include susy-breakpoint(769px 1199px) {
+
+        font-size:3vw;
+
+        &--intro-text {
+            
+            font-size:8vw;
+        }
+    }     
+}
+
+
+.t3 {
+    
+    font-family:$Montserrat-Bold;
+    font-size: 140px;
+    text-transform: uppercase;
+    color:white;
+    
+    @include susy-breakpoint(max-width 480px) {
+        
+    font-size: 40px;
+  
+    }
+    @include susy-breakpoint(481px 768px) {
+    font-size: 60px;        
+    }
+    @include susy-breakpoint(769px 1199px) {
+    font-size: 8vw;        
+    }    
+    
+}
+
+
+

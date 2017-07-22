@@ -1,0 +1,117 @@
+@import "C:/Users/Piotrek/desktop/Nauka/bower_components/susy/sass/susy";
+@import "C:/Users/Piotrek/desktop/Nauka/bower_components/breakpoint-sass/stylesheets/breakpoint";
+@import "variables";
+
+
+
+
+
+// Base 
+
+@import 'base/reset';
+
+
+
+// Helpers 
+
+@import 'helpers/variables';
+@import 'helpers/mixins';
+
+
+
+// Objects 
+
+@import 'objects/o-link';
+@import 'objects/o-hidden-label';
+@import 'objects/o-button';
+@import 'objects/o-card';
+@import 'objects/o-hr';
+@import 'objects/o-control';
+@import 'objects/o-p';
+
+// Components 
+
+
+@import 'components/c-about-us' ;
+@import 'components/c-about-us-gallery' ;
+@import 'components/c-accordion' ;
+@import 'components/c-blog' ;
+@import 'components/c-blog-article-info' ;
+@import 'components/c-blog-teasers' ;
+@import 'components/c-clients' ;
+@import 'components/c-clients-examples' ;
+@import 'components/c-counter' ;
+@import 'components/c-countup' ;
+@import 'components/c-design' ;
+@import 'components/c-footer' ;
+@import 'components/c-footer-blog' ;
+@import 'components/c-footer-gallery' ;
+@import 'components/c-footer-info' ;
+@import 'components/c-footer-instagram' ;
+@import 'components/c-form' ;
+@import 'components/c-gallery' ;
+@import 'components/c-header-switch' ;
+@import 'components/c-instagram-gallery' ;
+@import 'components/c-list' ;
+@import 'components/c-main-header' ;
+@import 'components/c-main-menu' ;
+@import 'components/c-nav' ;
+@import 'components/c-our-work' ;
+@import 'components/c-our-work-gallery' ;
+@import 'components/c-services' ;
+@import 'components/c-services-2' ;
+@import 'components/c-services-gallery' ;
+@import 'components/c-social-media' ;
+@import 'components/c-subscribe';
+@import 'components/c-team' ;
+@import 'components/c-team-members' ;
+@import 'components/c-testimonial' ;
+@import 'components/c-testimonial-three' ;
+@import 'components/c-testimonials' ;
+@import 'components/c-testimonials-list' ;
+@import 'components/c-testimonials-three' ;
+@import 'components/c-what-people-say' ;
+@import 'components/c-what-we-do' ;
+
+
+// Layout 
+
+@import 'layout/grid';
+@import 'layout/section-nav.scss';
+@import 'layout/section-main-header';
+@import 'layout/section-about-us';
+@import 'layout/section-counter';
+@import 'layout/section-services';
+@import 'layout/section-design';
+@import 'layout/section_c-what-we-do';
+@import 'layout/section-testimonials1';
+@import 'layout/section-testimonials2';
+@import 'layout/section-team';
+@import 'layout/section-clients';
+@import 'layout/section-our-work';
+@import 'layout/section-what-people-say';
+@import 'layout/section-latest-blog';
+@import 'layout/section-map';
+@import 'layout/section-footer';
+
+// Presentational Styles
+
+/* This comment is
+ * more than one line long
+ * since it uses the CSS comment syntax,
+ * it will appear in the CSS output. */
+@import 'layout/section-nav_presentation.scss';
+@import 'layout/section-main-header_presentation';
+@import 'layout/section-about-us_presentation';
+@import 'layout/section-counter_presentation';
+@import 'layout/section-services_presentation';
+@import 'layout/section-design_presentation';
+@import 'layout/section_c-what-we-do_presentation';
+@import 'layout/section-testimonials1_presentation';
+@import 'layout/section-testimonials2_presentation';
+@import 'layout/section-team_presentation';
+@import 'layout/section-clients_presentation';
+@import 'layout/section-our-work_presentation';
+@import 'layout/section-what-people-say_presentation';
+@import 'layout/section-latest-blog_presentation';
+@import 'layout/section-footer_presentation';

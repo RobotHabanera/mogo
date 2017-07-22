@@ -1,0 +1,204 @@
+@include susy-breakpoint(max-width 480px) {
+
+    .c-counter {
+            padding:90px 0;
+
+
+        h2 {
+            position: absolute;
+            text-indent: -9999px;
+        }    
+
+    }
+
+    .c-countup {
+
+
+
+
+
+            &__item {
+                    font-family:$Montserrat-Bold;
+                    font-size: 50px;
+                
+                &:nth-of-type(5) {
+
+                }
+        }
+            &__description {
+
+                font-family:$Montserrat-Light;
+                font-size:14px;
+                font-weight:100;
+                text-transform: uppercase;
+
+            }
+
+    }  
+    
+}
+
+
+
+
+
+
+
+
+
+
+@include susy-breakpoint(481px 768px) {
+
+    .c-counter {
+            padding:90px 0;
+
+
+        h2 {
+            position: absolute;
+            text-indent: -9999px;
+        }    
+
+    }
+
+    .c-countup {
+
+
+
+
+
+            &__item {
+                    font-family:$Montserrat-Bold;
+                    font-size: 50px;
+                
+                &:nth-of-type(5) {
+
+                }
+        }
+            &__description {
+
+                font-family:$Montserrat-Light;
+                font-size:14px;
+                font-weight:100;
+                text-transform: uppercase;
+
+            }
+
+    }  
+    
+}
+
+
+
+
+
+
+
+
+
+
+@include susy-breakpoint(769px 1199px) {
+
+    .c-counter {
+            padding:90px 0;
+
+
+        h2 {
+            position: absolute;
+            text-indent: -9999px;
+        }    
+
+    }
+
+    .c-countup {
+
+
+
+
+
+            &__item {
+                    font-family:$Montserrat-Bold;
+                    font-size: 50px;
+                
+                &:nth-of-type(5) {
+
+                }
+        }
+            &__description {
+
+                font-family:$Montserrat-Light;
+                font-size:14px;
+                font-weight:100;
+                text-transform: uppercase;
+
+            }
+
+    }  
+    
+}
+
+
+
+
+
+
+
+
+
+
+@include susy-breakpoint(1200px) {
+    
+    
+    .c-counter {
+            padding:90px 0;
+
+
+        h2 {
+            position: absolute;
+            text-indent: -9999px;
+        }    
+
+    }
+
+        .c-counter:before {
+
+        }
+
+
+
+
+
+
+    .c-countup {
+
+
+
+
+
+            &__item {
+                    font-family:$Montserrat-Bold;
+                    font-size: 72px;
+                
+                &:nth-of-type(5) {
+
+                }
+            }
+            &__description {
+
+                font-family:$Montserrat-Light;
+                font-size:14px;
+                font-weight:100;
+                text-transform: uppercase;
+
+            }
+
+    }    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

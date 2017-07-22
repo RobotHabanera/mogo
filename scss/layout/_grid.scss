@@ -1,0 +1,353 @@
+@import "C:/Users/Piotrek/desktop/Nauka/bower_components/susy/sass/susy";
+@import "C:/Users/Piotrek/desktop/Nauka/bower_components/breakpoint-sass/stylesheets/breakpoint";
+
+
+
+$susy : (
+	columns: 4,
+	container: 580px,
+    container-position: auto,
+	global-box-sizing: border-box
+
+);
+
+$desktop : (
+
+    columns: 12,
+    container: 1200px,
+    container-position: auto,
+    global-box-sizing: border-box,
+    debug: (
+    
+
+        
+    )
+
+);
+
+$laptop : (
+
+    columns: 12,
+    container: 1199px,
+    container-position: auto,
+    global-box-sizing: border-box,
+    debug: (
+    
+
+        
+    )
+
+);
+
+$our_work_desktop : (
+
+    columns: 12,
+    container: 100%,
+    gutter-position: inside,
+    flow: ltr,
+    global-box-sizing: border-box,
+    debug: (
+    
+
+  
+    )
+
+);
+
+@include border-box-sizing;
+
+@include font-face("Montserrat-SemiBold", Montserrat-SemiBold, normal, normal);
+@include font-face("Montserrat-Bold", Montserrat-Bold, normal, normal);
+@include font-face("Montserrat-Regular", Montserrat-Regular, normal, normal);
+@include font-face("Montserrat-Light", Montserrat-Light, normal, normal);
+@include font-face("KaushanScript-Regular", KaushanScript-Regular, normal, normal);
+@include font-face("Roboto-Regular", Roboto-Regular, normal, normal);
+@include font-face("Roboto-LightItalic", Roboto-LightItalic, normal, normal);
+
+
+
+
+html {
+
+
+   overflow-x:hidden; 
+    
+}
+
+body {
+
+
+  position:relative;
+  overflow-x:hidden;
+    
+}
+
+main {
+
+
+}
+
+
+
+
+a.o-control--prev, a.o-control--next {
+    position: absolute;
+    top: 45%;
+    z-index: 999;
+    display: block;
+    width: 24px;
+    height: 22px;
+    opacity:.8;
+    background-image:url('../img/accordion_arrow.png');
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+a.o-control--prev:hover, a.o-control--next:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
+}
+a.o-control--prev {
+    border-radius: 0 20px 20px 0;
+    transform: rotate(90deg);    
+}
+a.o-control--next {
+    transform: rotate(270deg);    
+    right: 0;
+    border-radius: 20px 0 0 20px;
+}
+
+.color {
+    filter: brightness(220%);
+}
+
+
+a.o-control--prev2, a.o-control--next2 {
+    position: absolute;
+
+    top: 45%;
+    z-index: 999;
+    display: block;
+    width: 24px;
+    height: 22px;
+    opacity:.8;
+    background-image:url('../img/accordion_arrow.png');
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+a.o-control--prev2:hover, a.o-control--next2:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
+}
+a.o-control--prev2 {
+    border-radius: 0 20px 20px 0;
+    transform: rotate(90deg);    
+}
+a.o-control--next2 {
+    transform: rotate(270deg);    
+    right: 0;
+    border-radius: 20px 0 0 20px;
+}
+
+
+
+
+
+
+.ui-accordion .ui-accordion-header {
+    height:60px;
+    border:1px solid #e5e5e5;
+    background:#fff;
+    font-family:$Montserrat-Light;
+    font-weight:100;
+    font-size:14px;
+    color:#5a5a5a;
+    text-transform: uppercase;
+}
+
+.ui-accordion-header:active {
+    background:#f6f6f6;
+    opacity:1;
+}
+
+
+.accordion {
+    
+    h3 {
+    position: relative;
+    top:0;
+    }
+    &__heading {
+        position: absolute;
+        left:90px;
+        top:25px;
+    }
+}
+
+.c-services-2 .accordion h3:nth-of-type(1) .accord-icon {
+    position: absolute;
+    left: 210px;
+    display:inline-block;
+    width:52px;
+    height:52px;
+    background-image:url('../img/icon_photography.png');
+    background-size:100% auto;
+    background-position:center;
+    background-repeat: no-repeat;     
+}
+
+.c-services-2 .accordion h3:nth-of-type(2) .accord-icon {
+    position: absolute;
+    left: 210px;    
+    display:inline-block;
+    width:52px;
+    height:52px;
+    background-image:url('../img/icon_creativity.png');
+    background-size:100% auto;
+    background-position:center;
+    background-repeat: no-repeat;     
+}
+
+.c-services-2 .accordion h3:nth-of-type(3) .accord-icon {
+    position: absolute;
+    left: 210px;    
+    display:inline-block;
+        width:52px;
+    height:52px;
+        background-image:url('../img/icon_web_design.png');
+    background-size:100% auto;
+    background-position:center;
+    background-repeat: no-repeat;   
+}
+
+
+
+.ui-accordion .ui-accordion-content::-webkit-scrollbar-track {
+	background-color: #f5f5f5;
+}
+
+.ui-accordion .ui-accordion-content::-webkit-scrollbar {
+    position: fixed;
+    z-index:99999999999999999;
+	width: 5px;
+	background-color: #f5f5f5; 
+    
+}
+
+.ui-accordion .ui-accordion-content::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #95e1d3;
+}
+
+
+.ui-accordion .ui-accordion-content {
+    max-height: 214px;
+
+   
+}
+
+.ui-accordion .ui-accordion-content:active {
+    overflow-x: scroll;
+   
+}
+
+.ui-accordion-content .ui-corner-bottom .ui-helper-reset .ui-widget-content .ui-accordion-content-active {
+    overflow-y: scroll;    
+}
+
+.c-services-2__figcaption {
+     font-family: $Roboto-LightItalic;
+            font-size:14px;
+    text-align: justify;
+}
+
+
+
+.ui-icon, .ui-widget-content .ui-icon {
+     width:22px;
+    height:12px;   
+    background-image:url('../img/accordion_arrow.png');
+    background-size:100% auto;
+    background-position:center;
+    background-repeat: no-repeat;
+    position:absolute; 
+    right:18px;
+    top:24px;
+    max-height: 100px;
+}
+
+.ui-state-active {
+    border:none;
+}
+
+.ui-state-active .ui-icon, .ui-button:active .ui-icon {
+    width:22px;
+    height:12px;
+    background-image:url('../img/accordion_arrow.png');
+    background-size:100% auto;
+    background-position:center;
+    background-repeat: no-repeat;    
+
+}
+
+.ui-state-hover .ui-icon, .ui-button:hover .ui-icon, .ui-button:focus .ui-icon {
+    width:22px;
+    height:12px;    
+    background-image:url('../img/accordion_arrow.png');
+    background-size:100% auto;
+    background-position:center;
+    background-repeat: no-repeat;
+    border: none;
+
+}
+
+
+.ui-state-focus .ui-icon {
+    width:22px;
+    height:12px;    
+    background-image:url('../img/accordion_arrow.png');
+    background-size:100% auto;
+    background-position:center;
+    background-repeat: no-repeat;
+    position:absolute; 
+    right:18px;
+    top:24px;    
+}
+
+
+.back-to-top {
+    display: block;
+    position:fixed;
+    z-index:999;
+    width:40px;
+    height:40px;
+    bottom:15px;
+    right:-50px;    
+    background-image:url('../img/back-to-top.png');
+    background-position: center;
+    background-size:100% auto;
+    background-repeat:no-repeat;
+    opacity:.2;
+    @include susy-breakpoint(max-width 480px) {
+    width:35px;
+    height:35px;           
+    }
+    @include susy-breakpoint(481px 768px) {
+        
+    width:35px;
+    height:35px;        
+    }
+}
+
+
+#scrollMsg{
+ position:fixed;
+ color: red;
+ font-size: 20px; 
+    background: white;
+    padding:20px;
+}

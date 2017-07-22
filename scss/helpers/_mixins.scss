@@ -1,0 +1,45 @@
+
+
+
+
+
+
+@mixin font-face($family,$src,$weight: normal,$style: normal) {
+@font-face {
+font-family: $family;
+src: url('../fonts/#{$src}.woff') format('woff'), // standards
+        url('../fonts/#{$src}.woff2') format('woff2'); // standards
+
+    font-style: $style;
+    font-weight: $weight;
+}
+}
+
+
+
+// scss. Clearfix mixin
+
+	@mixin cf {
+		&:after {
+			content: '';
+			display:block;
+			clear:both;
+		}
+	}
+
+
+
+@mixin s1 {
+    font-size:90%
+}
+
+@mixin s2 {
+    font-size:70%;
+}
+
+@mixin s3 {
+    font-size: 50%;
+}
+
+
+

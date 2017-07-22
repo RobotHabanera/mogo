@@ -1,0 +1,359 @@
+@include susy-breakpoint(max-width 480px) {
+
+    .c-testimonials {
+            @include cf;
+            position: relative;
+            @include container();
+            text-align:center;
+            padding:70px 0;
+
+        &:before {
+            content: '';
+            position:absolute;
+            top:0;
+            bottom:0;
+            z-index:-1;
+            width:100vw;
+            left: calc(-50vw + 50%);
+            background-color: #f8f8f8;
+        }    
+        h2 {
+            position:absolute;
+            left:-9999px;
+        }
+        &__mask {
+            margin:0 auto;
+            position: relative;
+            overflow:hidden;
+            
+        }
+}
+        .c-testimonials-list {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+            li {
+
+            }
+        }
+    
+        .c-testimonial {
+            position:relative;
+            width: 300px;
+            height:300px;
+            margin:0 auto;
+            padding:0;
+            float:left;
+            @include nested(12) {
+
+                &__item {
+
+                }
+
+                &__author-photo {
+                    position: absolute;
+                    left:0;
+                    right:0;
+                    margin:auto;
+                    display:inline-block;
+                    width:150px;
+                    height:150px;            
+                }
+
+                &__text {
+                    width: span(9.7 of 12);
+                    top:200px;
+                }
+
+                &__author-name {
+                    position: absolute;
+                    left:270px;
+                    bottom:0;
+                }
+
+            }
+
+
+        }
+}
+
+
+
+
+
+
+
+
+
+
+@include susy-breakpoint(481px 768px) {
+
+    .c-testimonials {
+            @include cf;
+            position: relative;
+            @include container();
+            text-align:center;
+            padding:70px 0;
+
+        &:before {
+            content: '';
+            position:absolute;
+            top:0;
+            bottom:0;
+            z-index:-1;
+            width:100vw;
+            left: calc(-50vw + 50%);
+            background-color: #f8f8f8;
+        }    
+        h2 {
+            position:absolute;
+            left:-9999px;
+        }
+        &__mask {
+            margin:0 auto;
+            position: relative;
+            overflow:hidden;
+            
+        }
+}
+        .c-testimonials-list {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+            li {
+
+
+
+
+            }
+        }
+    
+        .c-testimonial {
+            position:relative;
+            width: 300px;
+            height:300px;
+            margin:0 auto;
+            padding:0;
+            float:left;
+            @include nested(12) {
+
+                &__item {
+
+                }
+
+                &__author-photo {
+                    position: absolute;
+                    left:0;
+                    right:0;
+                    margin:auto;
+                    display:inline-block;
+                    width:150px;
+                    height:150px;            
+                }
+
+                &__text {
+                    width: span(9.7 of 12);
+                    top:200px;
+                }
+
+                &__author-name {
+                    position: absolute;
+                    left:270px;
+                    bottom:0;
+                }
+
+            }
+
+
+        }
+}
+
+
+
+
+
+
+
+
+
+
+@include susy-breakpoint(769px 1199px) {
+
+    .c-testimonials {
+                @include cf;
+    position: relative;
+        @include container($desktop);
+        text-align:center;
+        padding:70px 0;
+
+        &:before {
+            content: '';
+            position:absolute;
+            top:0;
+            bottom:0;
+            z-index:-1;
+            width:100vw;
+            left: calc(-50vw + 50%);
+            background-color: #f8f8f8;
+        }    
+        h2 {
+            position:absolute;
+            left:-9999px;
+        }
+        &__mask {
+            margin:0 auto;
+            position: relative;
+            overflow:hidden;
+            
+        }
+}
+    .c-testimonials-list {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+        
+        li {
+
+
+
+            
+        }
+    }
+    
+    .c-testimonial {
+
+  position:relative;
+  width: 800px;
+    height:150px;
+  margin:0 auto;
+  padding:0;
+  float:left;
+        
+        
+        &__item {
+       
+        }
+        &__author-photo {
+            position: absolute;
+            left:0;
+            display:inline-block;
+            width:150px;
+            height:150px;            
+        }
+        &__text {
+            width: span(9.7 of 12);
+        }
+        
+
+        
+        &__author-name {
+            position: absolute;
+            left:270px;
+            bottom:0;
+        }
+        
+        
+
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@include susy-breakpoint(1200px) {
+    
+    
+    .c-testimonials {
+                @include cf;
+    position: relative;
+        @include container($desktop);
+        text-align:center;
+        padding:70px 0;
+
+        &:before {
+            content: '';
+            position:absolute;
+            top:0;
+            bottom:0;
+            z-index:-1;
+            width:100vw;
+            left: calc(-50vw + 50%);
+            background-color: #f8f8f8;
+        }    
+        h2 {
+            position:absolute;
+            left:-9999px;
+        }
+        &__mask {
+            margin:0 auto;
+            position: relative;
+            overflow:hidden;
+            
+        }
+}
+    .c-testimonials-list {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+        
+        li {
+
+
+
+            
+        }
+    }
+    
+    .c-testimonial {
+
+  position:relative;
+  width: 1000px;
+    height:150px;
+  margin:0 auto;
+  padding:0;
+  float:left;
+        
+        
+        &__item {
+       
+        }
+        &__author-photo {
+            position: absolute;
+            left:0;
+            display:inline-block;
+            width:150px;
+            height:150px;            
+        }
+        &__text {
+            width: span(9.7 of 12);
+        }
+        
+
+        
+        &__author-name {
+            position: absolute;
+            left:270px;
+            bottom:0;
+        }
+        
+        
+
+    
+    }
+    
+    
+    
+}
