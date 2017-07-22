@@ -499,7 +499,17 @@ jQuery(function($){
                             });
 
 
-                 } clickAllowed2 = false;
+                 } 
+        
+        
+        function offsetAnchor() {
+              if (location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 80);
+              }
+            }
+        
+        
+        clickAllowed2 = false;
         
         } else if ($(window).width()<=1199 || clickAllowed2 == false) {
             
@@ -513,9 +523,9 @@ jQuery(function($){
 
 
      //smoothscroll
-    $('a[href*=#]:not([href=#])').click(function(e) {
+    $('.c-nav .c-main-menu .c-main-menu__link').on('click', function (e) {
         
-        e.preventDefault();
+        
                     var currLink = $(this); 
                     if (currLink.hasClass("trala")) {
         
@@ -569,16 +579,15 @@ jQuery(function($){
                     var target = this.hash,
                         menu = target;
                     $target = $(target);
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top-80
-        }, 1000);
-        return false;
-      }
-    }
+                    $('html, body').stop().animate({
+                        scrollTop: $target.position().top - 80
+                    }, 1200, 'swing', function () {
+                        location.hash = target;
+                        $(document).on("scroll", onScroll);
+                    }); 
+                      window.setTimeout(function() {
+    offsetAnchor();
+  }, 0);
       
          
              
