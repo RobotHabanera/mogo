@@ -556,7 +556,7 @@ jQuery(function($){
          if ($(window).width()>1199) {
              
 $(document).off("scroll");
-                        $(document).on("scroll", onScroll);             
+            
                     e.preventDefault();
 window.location.hash = target;
 
@@ -577,7 +577,7 @@ window.location.hash = target;
 
                     }); 
 
-
+                        $(document).on("scroll", onScroll); 
              
              
              
