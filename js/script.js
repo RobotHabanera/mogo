@@ -570,7 +570,7 @@ jQuery(function($){
                         menu = target;
                     $target = $(target);
                     $('html, body').stop().animate({
-                        scrollTop: $target.position().top - 80
+                        scrollTop: $target.position().top - 60
                     }, 1200, 'easeOutQuad', function () {
                          
                         
