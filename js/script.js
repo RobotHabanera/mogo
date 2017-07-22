@@ -574,13 +574,12 @@ jQuery(function($){
 
 
                     $(this).prepend('<div class="object1"></div>');
-     
-             var $target = $(this.hash), target = this.hash;
-             var targetOffset = $target.position().top - 70;
+             var href = $( this ).attr( 'href' );       
+             var target = this.hash,
                         menu = target;
                     $target = $(target);
                     $('html, body').stop().animate({
-                        scrollTop: targetOffset
+                        scrollTop: $target.position().top - 80
                     }, 1200, 'swing', function () {
                         location.hash = target;
                         $(document).on("scroll", onScroll);
