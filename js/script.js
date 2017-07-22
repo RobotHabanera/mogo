@@ -579,9 +579,9 @@ jQuery(function($){
                         menu = target;
                     $target = $(target);
                     $('html, body').stop().animate({
-                        scrollTop: $target.position().top - 70
-                    }, 1200, 'swing', function (e) {
-
+                        scrollTop: $target.position().top - 80
+                    }, 1200, 'swing', function () {
+                        location.hash = href;
                         $(document).on("scroll", onScroll);
                     }); 
 
