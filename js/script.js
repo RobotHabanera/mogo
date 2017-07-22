@@ -579,12 +579,9 @@ jQuery(function($){
                         menu = target;
                     $target = $(target);
                     var hieronimes = $target.position().top - 80;
-                    $('html, body').stop().animate({
-                        scrollTop: $target.position().top - 80
-                    }, 1200, 'swing', function () {
-                        location.hash = hieronimes;
+                    $(window).stop(true).scrollTo(this.hash {duration:1000,interrupt:true,offset: -80});
                         $(document).on("scroll", onScroll);
-                    }); 
+                    
 
       
          
