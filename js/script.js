@@ -571,7 +571,7 @@ jQuery(function($){
                     var target = this.hash;
                     $target = $(target);
                     $('html, body').stop().animate({
-                        scrollTop: $target.position().top - 80
+                        scrollTop: $target.position().top - 75
                     }, 700, 'swing', function () {
                         location.hash = target;
                         $(document).on("scroll", onScroll);
