@@ -578,7 +578,7 @@ jQuery(function($){
              var target = this.hash,
                         menu = target;
                     $target = $(target);
-                    var hieronimes = $target.position().top - 80
+                    var hieronimes = $target.position().top - 80;
                     $('html, body').stop().animate({
                         scrollTop: $target.position().top - 80
                     }, 1200, 'swing', function () {
