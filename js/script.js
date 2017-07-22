@@ -515,7 +515,7 @@ jQuery(function($){
      //smoothscroll
     $('a[href*=#]:not([href=#])').click(function(e) {
         
-        
+        e.preventDefault();
                     var currLink = $(this); 
                     if (currLink.hasClass("trala")) {
         
