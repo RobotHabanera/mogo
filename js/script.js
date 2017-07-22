@@ -406,6 +406,13 @@ $(window).resize(function() {
 /* Funkcja do zmiany menu desktopowego na mobilne menu i vice versa w zależności od szerokości okna przeglądarki */
 
 
+           function offsetAnchor() {
+              if (location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 80);
+              }
+            }
+
+
 jQuery(function($){      
       
 
@@ -460,11 +467,7 @@ jQuery(function($){
     
     if ($(window).width()>1199 || clickAllowed2 == true) {
  
-           function offsetAnchor() {
-              if (location.hash.length !== 0) {
-                window.scrollTo(window.scrollX, window.scrollY - 80);
-              }
-            }
+
         
        
         
