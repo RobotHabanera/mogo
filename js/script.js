@@ -524,7 +524,7 @@ jQuery(function($){
 
      //smoothscroll
     $('.c-nav .c-main-menu .c-main-menu__link').on('click', function (e) {
-        
+                offsetAnchor();
 
                        window.setTimeout(function() {
                             offsetAnchor();
