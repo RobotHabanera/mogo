@@ -555,9 +555,10 @@ jQuery(function($){
  
          if ($(window).width()>1199) {
              
-$(document).off("scroll");
+
             
                     e.preventDefault();
+             $(document).off("scroll");
 window.location.hash = target;
 
                     $('.c-nav .c-main-menu  a').each(function () {
