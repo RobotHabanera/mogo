@@ -572,6 +572,7 @@ jQuery(function($){
              
 
                     e.preventDefault();
+             location.hash = target;
                     $(document).off("scroll");
 
                     $('.c-nav .c-main-menu  a').each(function () {
@@ -588,7 +589,7 @@ jQuery(function($){
                         scrollTop: $target.position().top - 80
                     }, 1200, 'swing', window.setTimeout(function() () {
                         
-                        location.hash = target;
+                        
                                 
                             offsetAnchor();
                           }, 0); 
