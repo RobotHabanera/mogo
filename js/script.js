@@ -476,10 +476,10 @@ jQuery(function($){
         
         $(document).on("scroll", onScroll);
 
-                 function onScroll(){
+                 function onScroll(event){
                         $('div.object1').remove();
 
-                             
+                             event.preventDefault();
                             var scrollPos = $(document).scrollTop();
                              var menuBarOpenedOnce = 0;
                             $('.c-nav .c-main-menu .c-main-menu__link').each(function () {
@@ -523,11 +523,8 @@ jQuery(function($){
      //smoothscroll
     $('.c-nav .c-main-menu .c-main-menu__link').on('click', function (e) {
         
-                    e.preventDefault();
         
                     var currLink = $(this); 
-
-
                     if (currLink.hasClass("trala")) {
         
                             
@@ -537,7 +534,7 @@ jQuery(function($){
         
         if ($(window).width()<=1199) {
 
-
+            e.preventDefault();
             $('html,body').animate({
                 scrollTop: $($.attr(this, 'href')).offset().top -60
             }, 1000, function() { 
@@ -567,6 +564,7 @@ jQuery(function($){
          if ($(window).width()>1199) {
              
  
+                    e.preventDefault();
                     $(document).off("scroll");
 
                     $('.c-nav .c-main-menu  a').each(function () {
@@ -578,14 +576,10 @@ jQuery(function($){
                     $(this).prepend('<div class="object1"></div>');
                     var target = this.hash,
                         menu = target;
-             
-                    $target = $(target);        
-
-                    
-                    $('html, body').animate({
+                    $target = $(target);
+                    $('html, body').stop().animate({
                         scrollTop: $target.position().top - 80
                     }, 1200, 'swing', function () {
-
                         location.hash = target;
                         $(document).on("scroll", onScroll);
                     }); 
