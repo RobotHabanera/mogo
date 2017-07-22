@@ -569,13 +569,16 @@ jQuery(function($){
                     var target = this.hash,
                         menu = target;
                     $target = $(target);
-                    $('html, body').stop().animate({
-                        scrollTop: $target.position().top - 80
-                    }, 1200, 'easeOutQuad', function () {
-                         window.location.hash = target;
-                        $(document).on("scroll", onScroll);
-                    }); 
-
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top-150
+        }, 1000);
+        return false;
+      }
+    }
       
          
              
