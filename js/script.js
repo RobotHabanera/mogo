@@ -565,7 +565,9 @@ jQuery(function($){
  
          if ($(window).width()>1199) {
              
- 
+                       window.setTimeout(function() {
+    offsetAnchor();
+  }, 0);
                     e.preventDefault();
                     $(document).off("scroll");
 
@@ -585,9 +587,7 @@ jQuery(function($){
                         location.hash = target;
                         $(document).on("scroll", onScroll);
                     }); 
-                      window.setTimeout(function() {
-    offsetAnchor();
-  }, 0);
+
       
          
              
