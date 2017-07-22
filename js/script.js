@@ -557,7 +557,7 @@ jQuery(function($){
              
  
                     e.preventDefault();
-                    $(document).off("scroll");
+
 
                     $('.c-nav .c-main-menu  a').each(function () {
                         $(this).removeClass('trala');
