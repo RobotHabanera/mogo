@@ -582,7 +582,7 @@ jQuery(function($){
                     $('html, body').stop().animate({
                         scrollTop: targetOffset
                     }, 1200, 'swing', function () {
-                        location.hash = targetOffset;
+                        location.hash = target;
                         $(document).on("scroll", onScroll);
                     }); 
 
