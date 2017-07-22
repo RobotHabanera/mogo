@@ -733,7 +733,7 @@ html {
 
 body {
   position: relative;
-  overflow-x: hidden; }
+  overflow: hidden; }
 
 a.o-control--prev, a.o-control--next {
   position: absolute;
