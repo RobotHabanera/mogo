@@ -572,7 +572,7 @@ jQuery(function($){
                     $('html, body').stop().animate({
                         scrollTop: $target.position().top - 80
                     }, 1200, 'easeOutQuad', function () {
-                         window.location.hash = target;
+                         
                         $(document).on("scroll", onScroll);
                     }); 
 
