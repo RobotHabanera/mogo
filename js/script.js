@@ -572,18 +572,16 @@ jQuery(function($){
                     })
                     $(this).addClass('trala');
 
-
+                    var menuheight = $('.c-nav').height();
                     $(this).prepend('<div class="object1"></div>');
              var href = $( this ).attr( 'href' );       
              var target = this.hash,
                         menu = target;
                     $target = $(target);
-                    var hieronimes = $target.position().top - 80
                     $('html, body').stop().animate({
-                        scrollTop: hieronimes
+                        scrollTop: $target.position().top - menuheight
                     }, 1200, 'swing', function () {
-                            //window.location.hash = $target
-                    $target
+                        location.hash = target;
                         $(document).on("scroll", onScroll);
                     }); 
 
