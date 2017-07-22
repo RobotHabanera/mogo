@@ -573,10 +573,10 @@ jQuery(function($){
                         scrollTop: $target.position().top - 80
                     }, 1200, 'easeOutQuad', function () {
                          
-                        $(document).on("scroll", onScroll);
+                        
                     }); 
 
-      
+      $(document).on("scroll", onScroll);
          
              
              
