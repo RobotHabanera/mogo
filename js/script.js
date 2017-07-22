@@ -555,11 +555,9 @@ jQuery(function($){
  
          if ($(window).width()>1199) {
              
-
-            
+ 
                     e.preventDefault();
-             $(document).off("scroll");
-window.location.hash = target;
+                    $(document).off("scroll");
 
                     $('.c-nav .c-main-menu  a').each(function () {
                         $(this).removeClass('trala');
@@ -572,13 +570,14 @@ window.location.hash = target;
                         menu = target;
                     $target = $(target);
                     $('html, body').stop().animate({
-                        scrollTop: $target.position().top - 60
+                        scrollTop: $target.position().top - 80
                     }, 1200, 'easeOutQuad', function () {
-                         
-
+                         window.location.hash = target;
+                        $(document).on("scroll", onScroll);
                     }); 
 
-                        $(document).on("scroll", onScroll); 
+      
+         
              
              
              
